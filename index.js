@@ -6,13 +6,13 @@ const generator = new AvatarGenerator();
 const avatarUrl = generator.generateRandomAvatar();
 
 https.get(avatarUrl, (res) => {
-    const path = "./avatar.svg";
+    const path = "./output/avatar.svg";
     const fileStream = fs.createWriteStream(path);
     res.pipe(fileStream);
     
     fileStream.on("finish", () => {
         fileStream.close();
-        console.log("File written");
+        console.log("File written in output folder.");
     });
 });
 
