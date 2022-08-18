@@ -1,5 +1,5 @@
 # generate-random-avatar
-A simple NodeJS App that can generate a random avatar and save it to output folder as SVG file.
+This application allows you to generates a random avatar and saves it to a output folder. The avatar is saved as SVG file using NodeJS.
 
 ## Packages
 ```bash
